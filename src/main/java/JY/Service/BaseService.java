@@ -1,6 +1,6 @@
-package JY.Dao;
+package JY.Service;
 
-public interface BaseDao<T> {
+public interface BaseService<T> {
 	
 	public void save(T t);
 	
@@ -8,4 +8,6 @@ public interface BaseDao<T> {
 	
 	public void update(T t);
 	
+	
+
 }

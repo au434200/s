@@ -1,5 +1,7 @@
 package JY.Service;
 
-public interface GoodService {
+import JY.Domain.Goods;
+
+public interface GoodService extends BaseService<Goods>{
 
 }

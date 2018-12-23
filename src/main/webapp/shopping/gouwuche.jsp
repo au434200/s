@@ -8,7 +8,7 @@
 		<meta charset="UTF-8">
         <meta name="author" content="order by dede58.com"/>
 		<title>我的购物车-小米商城</title>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 	<body>
 	<!-- start header -->
@@ -48,7 +48,7 @@
 					<div class="sub_content fl ">
 						<input type="checkbox" value="quanxuan" class="quanxuan" />
 					</div>
-					<div class="sub_content fl"><img src="./image/gwc_xiaomi6.jpg"></div>
+					<div class="sub_content fl"><img src="${pageContext.request.contextPath}/image/gwc_xiaomi6.jpg"></div>
 					<div class="sub_content fl ft20">小米6全网通6GB内存+64GB 亮黑色</div>
 					<div class="sub_content fl ">2499元</div>
 					<div class="sub_content fl">
@@ -62,7 +62,7 @@
 					<div class="sub_content fl ">
 						<input type="checkbox" value="quanxuan" class="quanxuan" />
 					</div>
-					<div class="sub_content fl"><img src="./image/gwc_xiaomi6.jpg"></div>
+					<div class="sub_content fl"><img src="${pageContext.request.contextPath}/image/gwc_xiaomi6.jpg"></div>
 					<div class="sub_content fl ft20">小米6全网通6GB内存+64GB 亮黑色</div>
 					<div class="sub_content fl ">2499元</div>
 					<div class="sub_content fl">

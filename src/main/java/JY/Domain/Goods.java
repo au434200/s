@@ -7,7 +7,7 @@ public class Goods {
 	private Double good_price;
 	private Boolean good_hot;
 	private Boolean good_new;
-	private Boolean good_size;
+	private String good_size;
 	private String good_image;
 	private String good_model;
 	
@@ -47,10 +47,10 @@ public class Goods {
 	public void setGood_new(Boolean good_new) {
 		this.good_new = good_new;
 	}
-	public Boolean getGood_size() {
+	public String getGood_size() {
 		return good_size;
 	}
-	public void setGood_size(Boolean good_size) {
+	public void setGood_size(String good_size) {
 		this.good_size = good_size;
 	}
 	public String getGood_image() {

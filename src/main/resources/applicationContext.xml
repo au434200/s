@@ -13,6 +13,18 @@
 	<property name="sessionFactory" ref="sessionFactory"></property>
 </bean>
 
+<bean name="goodsAction" class="JY.Action.GoodsAction" scope="prototype">
+	<property name="goodsService" ref="goodsService"></property>
+</bean>
+
+<bean name="goodsService" class="JY.Service.Impl.GoodsServiceImpl">
+	<property name="goodsDao" ref="goodsDao"></property>
+</bean>
+
+<bean name="goodsDao" class="JY.Dao.Impl.GoodsDaoImpl">
+	<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>
+
 <!-- 配置C3P0连接池 -->
 <context:property-placeholder location="classpath:db.properties" />
 	<bean name="dataSource"

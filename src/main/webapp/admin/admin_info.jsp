@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,19 +22,19 @@
 			<div class="ddzx">订单中心</div>
 			<div class="subddzx">
 				<ul>
-					<li><a href="./dingdanzhongxin.html" >我的订单</a></li>
+					<li><a href="./dingdanzhongxin.html" >查询订单</a></li>
+					<li><a href="<c:url value='/admin/addGoods.jsp'/>" >添加商品</a></li>
 
 				</ul>
 			</div>
 			<div class="ddzx">个人中心</div>
 			<div class="subddzx">
 				<ul>
-					<li><a href="./self_info.html" style="color:#ff6700;font-weight:bold;">我的个人中心</a></li>
+					<li><a href="<c:url value='/admin/admin_info.jsp'/>" >我的个人中心</a></li>
 
 				</ul>
 			</div>
 		</div>
-		
 		
 		<form action="">
 		<div class="rtcont fr">
@@ -84,7 +85,7 @@
 				</span>
 			</div>
 			<center>
-			<input type="submit" value="编辑" style="width: 80px;height: 40px;">
+			<input type="submit" value="编辑">
 			</center>
 		</div>
 		

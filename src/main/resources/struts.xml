@@ -6,9 +6,17 @@
 
 	<constant name="struts.objectFactory" value="spring"></constant>
 	<constant name="struts.action.extension" value="action" /> 
+	
 	<package name="user" extends="struts-default" namespace="/" >
 	<global-allowed-methods>regex:.*</global-allowed-methods> 
 		<action name="user_*"  class="userAction" method="{1}">
+			
+		</action>
+	</package>
+	
+	<package name="goods" extends="struts-default" namespace="/" >
+	<global-allowed-methods>regex:.*</global-allowed-methods> 
+		<action name="goods_*"  class="goodsAction" method="{1}">
 			
 		</action>
 	</package>
