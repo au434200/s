@@ -6,4 +6,6 @@ public interface UserService {
 	
 	public void save(User t);
 
+	public User findUserByNameAndPassword(User user);
+
 }
