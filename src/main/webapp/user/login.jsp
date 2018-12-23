@@ -8,7 +8,7 @@
 		<meta charset="UTF-8">
         <meta name="author" content="order by dede58.com"/>
 		<title>会员登录</title>
-		<link rel="stylesheet" type="text/css" href="./css/login.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login.css">
 </head>
 	<body>
 		<!-- login -->
