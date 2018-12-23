@@ -17,11 +17,23 @@ public class GoodsAction  extends ActionSupport implements ModelDriven<Goods>{
 	
 	private String imageFileName;
 	
-	private File image;
+	private File image; 
 	
 	private String imageFileContentType;
 	
 	
+	public void setImageFileName(String imageFileName) {
+		this.imageFileName = imageFileName;
+	}
+
+	public void setImage(File image) {
+		this.image = image;
+	}
+
+	public void setImageFileContentType(String imageFileContentType) {
+		this.imageFileContentType = imageFileContentType;
+	}
+
 	public void setGoodsService(GoodService goodsService) {
 		this.goodsService = goodsService;
 	}
