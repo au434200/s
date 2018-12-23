@@ -18,7 +18,7 @@
 </center>
 	<!-- start danpin -->
 		<div class="danpin center">
-			a
+			
 			<div class="biaoti center">小米明星单品</div>
 			<div class="main center">
 				<div class="mingxing fl">
