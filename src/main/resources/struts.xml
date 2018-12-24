@@ -9,8 +9,9 @@
 	
 	<package name="user" extends="struts-default" namespace="/" >
 	<global-allowed-methods>regex:.*</global-allowed-methods> 
-		<action name="user_*"  class="userAction" method="{1}">
-			
+		<action name="user_*"  class="JY.Action.UserAction" method="{1}">
+			<result name="success">/index.jsp</result>
+			<result name="error">/user/login.jsp</result>
 		</action>
 	</package>
 	
