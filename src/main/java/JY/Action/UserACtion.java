@@ -15,7 +15,7 @@ public class UserACtion extends ActionSupport{
 	
 	public String test() {
 
-		System.out.println("asd");
+		System.out.println("asda");
 		return NONE;
 		
 	}
