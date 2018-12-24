@@ -55,7 +55,6 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 
 	public String login()throws Exception{
 		HttpSession session=request.getSession();
-		System.out.println(22222222);
 		User currentUser=userService.findUserByNameAndPassword(user);
 		if(currentUser!=null){
 			session.setAttribute("currentUser", currentUser);
@@ -65,6 +64,15 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 			return ERROR;
 		}
 	}
+	public String register()throws Exception{
+		HttpSession session=request.getSession();
+		if(userService.save(user)) {
+			return SUCCESS;
+		}
+		  error="×¢²áÊ§°Ü!";
+	     return "register";
+	}
+
 
 	public UserService getUserService() {
 		return userService;
